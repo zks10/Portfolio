@@ -6,11 +6,11 @@
 
 /*Custom*/
 :root{
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
+    --ff-primary: 'Lora', serif;
+    --ff-secondary: 'Roboto Slab', serif;
 
-    --fw-reg: 300;
-    --fw-bold: 900;
+    --fw-reg: 400;
+    --fw-bold: 700;
 
     --clr-light: #fff;
     --clr-dark: #151515;
@@ -22,8 +22,8 @@
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
 
-    --bs:0.25em 0.25em 0.75em rgba(0, 0, 0, 0.5),
-         0.125em 0.125em 0.25em rgba(0,0,0,0.4);
+    --bs:0.25em 0.25em 0.75em rgba(17, 17, 17, 0.5),
+         0.125em 0.125em 0.25em rgba(30, 30, 30, 0.4);
 }
 
 @media (min-width: 800px){
@@ -135,7 +135,7 @@ header{
 .nav__link{
     color:inherit;
     font-weight:var(--fw-bold);
-    font-size: var(--fs-h2);
+    font-size: 3rem;
     text-decoration:none;
 }
 
@@ -230,7 +230,7 @@ header{
         min-width: 250px;
         position: relative;
         z-index: 2;
-
+        border-radius: 1rem;
     }
 
     .section__subtitle--intro{
@@ -247,7 +247,7 @@ header{
 
 .about-me{
     background-color: var(--clr-dark);
-    background-image: url(../img/background.jpeg);
+    background-image: url(../img/background_main.jpeg);
     background-size: cover;
     color: var(--clr-light);
     
@@ -285,6 +285,7 @@ header{
    
     .top{
         margin-top:0.7em;
+        border-radius: 0.5rem;
     }
     .qingdao{
         display: block;
@@ -292,6 +293,7 @@ header{
         margin-right: auto;
         width: 50%;
         margin-top:0.7em;
+        border-radius: 0.5rem;
     }
     
 }
@@ -351,6 +353,7 @@ header{
 .footer .footer-content{
     height:300px;
     display: flex;
+    text-align: center;
     
 }
 
@@ -440,3 +443,104 @@ header{
     text-align:center;
 }
 
+.gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #1dacdb;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+    border-radius: 0.5rem;
+}
+
+.my-features{
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+}
+
+
+.features_class {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  
+  
+  .features_class a:last-child {
+    margin-bottom: 2rem; /* remove margin bottom for last child element */
+  }
+
+.Particle-image {
+    position:relative;
+    width: 400 px;
+
+}
+
+.Particle_img {
+    display: block;
+    border-radius: 0.75rem;
+}
+
+.ColorBox-image {
+    position:relative;
+    width: 400 px;
+    
+
+}
+
+.ColorBox_img {
+    display: block;
+    border-radius: 0.75rem;
+}
+
+.image__overplay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overplay:hover{
+    opacity: 1;
+}
+
+.image__overplay--blur {
+    backdrop-filter: blur(1px);
+}
+
+.image__overplay  > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overplay:hover > *{
+    transform: translateY(0);
+}
+.image__title{
+    font-size : 2em;
+    font-weight: bold;
+}
+
+.image__description{
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}

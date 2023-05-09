@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us Page</title>
+        <script src="https://kit.fontawesome.com/15a2c74a89.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/style_contact.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    </head>
+    <body>
+        <section class="contact_box">
+            <div class = "content">
+                <h2>Contact Us</h2>
+            </div>
+            <div class = "container">
+                <div class = "contactInfo">
+                    <div class = "box">
+                        <div class = "icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>University of Waterloo, <br> Waterloo, Ontario</p>
+                        </div>
+                    </div>
+                    <div class = "box">
+                        <div class = "icon"><i class="fa fa-phone"aria-hidden="true" ></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>647-323-3233</p>
+                        </div>
+                    </div>
+                    <div class = "box">
+                        <div class = "icon"><i class="fa fa-envelope"aria-hidden="true"></i></div>
+
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>kevinzhu20041010@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactForm">
+                    <form action="" name="web-contact-page">
+                        <h2>Send Message</h2>
+                        <div class="inputBox">
+                            <input type = "text" name = "name" required="required" >
+                            <span>Full Name</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type = "text" name = "email" required="required"  >
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea required="required" name = "message"></textarea>
+                            <span>Type your Message...</span>
+                        </div>
+                        <!-- <div class="inputBox">
+                            <input type = "submit" name = ""  value="Send" >
+                            
+                        </div> -->
+                        <button type="submit" class = "btn-submit">Submit </button>
+                    </form>
+                </div>
+
+                
+            </div>
+        </section>
+        <script>
+            const scriptURL = "https://script.google.com/macros/s/AKfycbx3lfvpiAmcNUrVrDje8q4ScDk1LmKjR7F5-oHR3fHIeiK8icDg3P1P_OQTyzGc6r6FkA/exec"
+            const form = document.forms['web-contact-page']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    alert('Thank you for your response!')
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>

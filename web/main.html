@@ -8,13 +8,17 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/15a2c74a89.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../css/style.css">
         <script src="../web/js/index.js"></script> 
+        
     </head>
 
     <body>
+        
+        
         <header> 
             <button class="nav-toggle" aria-label="toggle navigation"> 
                 <span class = "hamburger"> </span>
@@ -22,12 +26,12 @@
 
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                     <li class="nav__item"><a href="#aboutme" class="nav__link">About me</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">My Works</a></li>
                     <li class="nav__item"><a href="#award" class="nav__link">My Awards</a></li>
-                    <li class="nav__item"><a href="./web/Resume_kevin.pdf" class="nav__link">Resume</a></li>
-                    <li class="nav__item"><a href="#activities" class="nav__link">Extra Curriculars and Activites</a></li>
+                    <li class="nav__item"><a href="#features" class="nav__link">Cool Features</a></li>
+                    <li class="nav__item"><a href="./Kevin Zhu Resume.pdf" class="nav__link"target="_blank">Resume</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link"target="_blank">Contact Us</a></li>
                 </ul>
             </nav>
         </header>
@@ -66,7 +70,7 @@
                       Experience
                     </h3>
                     <p>
-                        I was born in Qingdao, Shandong, China and immigrate to Canada in April 10, 2016. It is my sixth years living in Canada.
+                        I was born in Qingdao, Shandong, China and immigrate to Canada in April 10, 2016. It is my seventh years living in Canada.
                        
                     </p>
                     <img height="350" src="../img/qingdao.png" alt="This is QingDao" class="qingdao">
@@ -154,19 +158,37 @@
             </div>
         </section>
 
-        <section class = "my-activies" id="activities">
-            <h2 class="section__title section__title--mywork"> 
-                Extra Curriculars and Activites
-            </h2>
-            <div class="gavel">
-                <h3>The Voice Gavel Club</h3nn>
-                <p>
-                    I was part of The Toastmaster International Voice Gavel club, 
-                </p>
-            </div>
-            <p class="section__subtitle section__subtitle--mywork">A selection range of my work</p>
-        </section>
+        <section class= "my-features" id="features">
+            <center><h2 class="section__title section__title--my-award"> 
+                Fun Features
+            </h2></center>
+            
+            <div class="features_class">
+            <a class="link" href = "./Particles.html" target="_blank">
+                <div class="Particle-image">
+                    <img width="400"  src="../img/Particle.png" class = "Image Particle_img">
+                    <div class="image__overplay image__overplay--blur">
+                            <div class="image__title">Particle</div>
+                            <p class="image__description">COOL Particles Effect ~</p>
+                    </div>
+                </div>
+            </a>
 
+            <a class="link" href = "./ColorBox.html" target="_blank">
+                <div class="ColorBox-image">
+                    <image width="400" height="268"src="../img/ColorBox.png" class="Image ColorBox_img">
+                        <div class="image__overplay">
+                            <div class="image__title">Color Box</div>
+                            <p class="image__description">WOO Changing Color ~</p>
+                        </div>
+                </div>
+            </a>
+
+            
+            </div>
+            
+        </section>
+        
         <footer class="footer">
             <div class = "footer-content">
                 <div class = "footer-section about">
@@ -183,48 +205,13 @@
                         <a class="social-list__link" href="https://twitter.com/KevinZh60755089" target="blank"> <i class="fa-brands fa-twitter"></i></a>
                     </div>
                 </div>
-                <div class = "footer-section contact-form">
-                    <h3>Conatact us</h3>
-                    <br>
-                    <form action="index1.html" method = "post">
-                        <input type = "email" name = "email" class = "text-input contact-input" placeholder="Your email address...">
-                        <textarea name="message" class="text-input contact input" placeholder="Your message..."></textarea>
-                        <button type = "submit" class = "btn btn-big">
-                            <i class="fas fa-envolope"></i>
-                            Send
-                        </button>
-                    </form>
-                </div>
             </div>
-
-
-            <!-- <a href="mailto:kevinzhu20041010@gmail.com" class="email__link">kevinzhu20041010@gmail.com</a>
-            <ul class="social-list" style="list-style: none;">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.instagram.com/kevin._.zhu/" target="blank">
-                        <i class="fa-brands fa-instagram"></i>
-                        
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://dmoj.ca/user/kevinzhu20041010" target="blank">
-                        <i class="fa-solid fas fas fa-star"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/zks10/" target="blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://twitter.com/KevinZh60755089" target="blank">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                </li>
-            </ul>  -->
+            
             <div class = "footer-bottom">
                 &copy; Designed by Kevin Zhu     
             </div>
+            
+            <a class = "gotopbtn" href = "#"><i class="fas fa-arrow-up"></i></a>
         </footer>
 
 
